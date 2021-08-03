@@ -1,0 +1,22 @@
+@media screen and (max-width:400px) {  /*Declarando que quando a tela estiver no tamanho de até 700px
+                                                                           seguirá a norma a seguir.*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+    } 
+.botao{
+    margin-top: 5px;
+    width: 150px;
+    height: 50px;
+   
+}
+    
+}
+
+@media screen and (min-width:1000px) {
+    .desenho-principal .descricao{
+        width: 50%; /*declarando que o texto da minha descriçao ficará em até 50% da pag*/
+
+    }
+    
+}

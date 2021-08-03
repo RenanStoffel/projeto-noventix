@@ -1,0 +1,186 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+    
+    /* declarando na raiz fonte de CSS as var(cores)
+    que serão usadas na programação.*/
+}
+
+
+*{
+
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+    /*limitando através do *(em toda a programação) as 
+margens, espaçamentos, e os elementos dentro das 
+caixas.*/
+
+}
+
+body{
+
+background:var(--preto); 
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+
+/* estou trabalhando no corpo do projeto, declarando 
+o fundo de pag.(background), e o tipo de fonte a ser
+usado quando não declarada nas header.*/
+
+}
+
+header .container{
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* declarando que o display em container é uma 
+    flex box, onde se alinha os elementos. Declarando
+    os caractéres alinhados . Declrando os itens
+    centralizados na linha. Declarando os espaçamento
+    entre os componentes. */ 
+
+}
+
+header .logo{
+
+    color: var(--vermelho);
+    font-family: Arial Black; 
+    font-size:40px;
+    margin-left: 5px;
+
+    /* declarando a programação dentro da class logo*/
+
+}
+
+header nav a{
+
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+
+    /* declarando a programação dentro da header nav*/
+
+}
+
+header nav a:hover{
+
+    color:#fff;
+
+    /* a função hover é usada pra mudar a cor dos
+    caractéres no momento que o mouse passa sobre
+    as mesmas.*/
+}
+/*toda a programação acima de header é referente o 
+cabeçalho do projeto*/
+
+.desenho-principal{
+    background:linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)100%),url('file:///F:/Programas%20html/Projeto%20Noventix/img/along.png');
+    height: 500px;
+    background-size:cover;
+    
+/* Declarado fundo com  degrade (rgba) mais imagem de fundo. Tamanho imagem e limite na box*/
+}
+.desenho-principal .descricao{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    /*Margem ou espaçamento entre titulo e descrição.
+    Margem entre descriçao e botoes. Tamanho fonte*/
+}
+
+.desenho-principal .titulo{
+    margin-top: 15%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/*Altura margem topo. Tamnho fonte e tipo fonte.*/
+}
+
+.desenho-principal .botao{
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 500ms;
+    
+   
+    /*declarado cor fundo botoes. Borda botoes. Cor caractéres. 
+    Tamanho cx botoes. Margem ou espaçamento entre eles.Tamanho fonte caracteres.
+    Ao passar o mouse sobre o botão muda de seta para ponteiro indicando que é um botao.
+    Diminuir o impacto na mudança de cor no hover*/
+
+}
+
+.desenho-principal .botao:hover{
+    background-color: white;
+    color:black;
+    
+    /*Ao passar o mouse sobre o botao a cor de fundo muda para branco e retirando volta a preto.*/
+}
+
+.desenho-principal .botao i{
+    margin-right: 8px;
+
+    /* Espaçmento entre ícones dos botoes. Obs.: utilizei os ícones do site Font Awesome.*/
+}
+
+.container{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.desenho-principal .container{
+    width: 70%;    /*largura*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    /* Declarado limite dentro box dos caracteres. Descriçao dos botoes.*/
+}
+
+.box-desenho{
+    height: 250px; /*tamanho da img*/
+    display: block;
+
+}
+
+.selecao-desenho{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.selecao-filmes{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.selecao-series{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.selecao-fim-de-ano{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
